@@ -31,10 +31,10 @@ model = joblib.load("model.joblib")
 
 # We'll take this in:
 class Features(BaseModel):
-    sepal_length: confloat(ge=0.0, le=1.0) # ensures values  are between 0 and 1
-    sepal_width: confloat(ge=0.0, le=1.0)
-    petal_length: confloat(ge=0.0, le=1.0)
-    petal_width: confloat(ge=0.0, le=1.0)
+    sepal_length: confloat(ge=0.0, le=10) # ensures values  are between 0 and 1
+    sepal_width: confloat(ge=0.0, le=10)
+    petal_length: confloat(ge=0.0, le=10)
+    petal_width: confloat(ge=0.0, le=10)
 
         # with an example
     class Config:
